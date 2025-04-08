@@ -1,3 +1,5 @@
+localStorage.clear();
+
 const gameView = document.getElementById("gameView");
 const achievementView = document.getElementById("achievementView");
 const backButton = document.getElementById("backButton");
