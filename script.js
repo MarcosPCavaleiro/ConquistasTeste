@@ -4,18 +4,19 @@ const backButton = document.getElementById("backButton");
 
 const conquistasPorJogo = {};
 
-fetch("conquistas.json?nocache=" + Date.now())
+fetch("https://gist.githubusercontent.com/Marcos/1234567890abcdef1234567890abcdef/raw/conquistas.json?nocache=" + Date.now())
   .then((res) => res.json())
   .then((data) => {
     Object.assign(conquistasPorJogo, data);
     salvarLocal();
     renderGames();
-    console.log("✅ conquistas.json carregado automaticamente");
+    console.log("✅ conquistas.json carregado automaticamente do Gist");
   })
   .catch((err) => {
-    console.warn("⚠️ Não foi possível carregar conquistas.json:", err);
-    carregarLocal(); // Tenta localStorage como fallback
+    console.warn("⚠️ Não foi possível carregar conquistas.json do Gist:", err);
+    carregarLocal(); // Tenta carregar do localStorage como alternativa
   });
+
 
 function renderGames() {
   gameView.innerHTML = "";
