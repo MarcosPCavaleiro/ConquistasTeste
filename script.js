@@ -4,7 +4,7 @@ const backButton = document.getElementById("backButton");
 
 const conquistasPorJogo = {};
 
-fetch("https://gist.githubusercontent.com/MarcosPCavaleiro/b7269a421e58380c3ce57b37597280ed/raw/36397d92aea59be974a77050fbd064a479e9c4e1/conquistas.json?nocache=" + Date.now())
+fetch("https://gist.githubusercontent.com/MarcosPCavaleiro/b7269a421e58380c3ce57b37597280ed/raw?nocache=" + Date.now())
   .then((res) => res.json())
   .then((data) => {
     Object.assign(conquistasPorJogo, data);
