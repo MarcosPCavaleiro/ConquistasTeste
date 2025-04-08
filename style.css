@@ -1,0 +1,150 @@
+body {
+  background: #111;
+  color: #fff;
+  font-family: Arial, sans-serif;
+  padding: 20px;
+  margin: 0;
+  padding-bottom: 100px;
+}
+
+h1 {
+  text-align: center;
+}
+
+.game-list {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+  gap: 15px;
+  margin-top: 20px;
+}
+
+.achievement-list {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+  margin-top: 20px;
+}
+
+.achievement-timestamp {
+  font-size: 0.8rem;
+  color: #aaa;
+  margin-top: 6px;
+}
+
+.game-card {
+  background: #1e1e1e;
+  border-radius: 3px;
+  text-align: center;
+  cursor: pointer;
+  overflow: hidden;
+  width: 200px;
+  margin: auto;
+}
+
+.game-card img {
+  width: 100%;
+  height: auto;
+  display: block;
+}
+
+.game-title {
+  padding: 10px;
+  font-weight: bold;
+  background: #2a2a2a;
+  font-size: 0.95rem;
+}
+
+.achievement {
+  background: #1e1e1e;
+  border-radius: 3px;
+  padding: 15px;
+  display: flex;
+  align-items: center;
+  gap: 15px;
+  box-shadow: 0 0 8px #00000055;
+}
+
+.achievement img {
+  width: 64px;
+  height: 64px;
+  border-radius: 3px;
+}
+
+.achievement-info {
+  flex: 1;
+}
+
+.achievement-title {
+  font-weight: bold;
+  font-size: 1.1rem;
+}
+
+.achievement-desc {
+  font-size: 0.9rem;
+  color: #ccc;
+}
+
+.progress-bar {
+  margin-top: 5px;
+  height: 8px;
+  background: #333;
+  border-radius: 4px;
+  overflow: hidden;
+}
+
+.progress-fill {
+  height: 100%;
+  background: #00ff88;
+}
+
+#backButton {
+  font-size: larger;
+  margin: 20px 0;
+  background: #4f4f4f;
+  color: white;
+  padding: 8px 16px;
+  border: none;
+  border-radius: 3px;
+  cursor: pointer;
+  display: none;
+}
+
+footer {
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  background: #222;
+  color: white;
+  text-align: center;
+  padding: 10px 0 0 0;
+  height: 45px;
+  z-index: 10;
+}
+
+#exportBtn,
+#importLabel {
+  background: #4f4f4f;
+  color: white;
+  padding: 8px 16px;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+  margin: 0 10px;
+  font-size: 0.95rem;
+}
+
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+    transform: translateY(10px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+.fade-in {
+  animation: fadeIn 0.4s ease forwards;
+}

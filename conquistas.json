@@ -1,0 +1,164 @@
+{
+  "570": {
+    "game": "Dota 2",
+    "icon": "https://cdn.cloudflare.steamstatic.com/steam/apps/570/library_600x900.jpg",
+    "conquistas": [
+      {
+        "achievement": "FIRST_BLOOD",
+        "displayName": "Primeiro Sangue",
+        "description": "Mate o primeiro inimigo em uma partida.",
+        "icon": "https://cdn.cloudflare.steamstatic.com/steamcommunity/public/images/apps/570/firstblood.png",
+        "time": 1712400000
+      },
+      {
+        "achievement": "WIN_10_GAMES",
+        "displayName": "Dez Vitórias",
+        "description": "Ganhe 10 partidas.",
+        "icon": "https://cdn.cloudflare.steamstatic.com/steamcommunity/public/images/apps/570/win10.png",
+        "progress": {
+          "current": 7,
+          "max": 10
+        },
+        "time": 1712460000
+      }
+    ]
+  },
+  "730": {
+    "game": "CS: GO",
+    "icon": "https://cdn.cloudflare.steamstatic.com/steam/apps/730/library_600x900.jpg",
+    "conquistas": [
+      {
+        "achievement": "BOMB_DEFUSER",
+        "displayName": "Especialista em Bombas",
+        "description": "Desarme 100 bombas.",
+        "icon": "https://cdn.cloudflare.steamstatic.com/steamcommunity/public/images/apps/730/defuser.png",
+        "progress": {
+          "current": 100,
+          "max": 100
+        },
+        "time": 1712500000
+      }
+    ]
+  },
+  "440": {
+    "game": "Team Fortress 2",
+    "icon": "https://cdn.cloudflare.steamstatic.com/steam/apps/440/library_600x900.jpg",
+    "conquistas": [
+      {
+        "achievement": "HEAD_OF_THE_CLASS",
+        "displayName": "Líder da Classe",
+        "description": "Domine todas as classes.",
+        "icon": "https://cdn.cloudflare.steamstatic.com/steamcommunity/public/images/apps/440/headclass.png",
+        "time": 1712100000
+      }
+    ]
+  },
+  "550": {
+    "game": "Left 4 Dead 2",
+    "icon": "https://cdn.cloudflare.steamstatic.com/steam/apps/550/library_600x900.jpg",
+    "conquistas": [
+      {
+        "achievement": "ZOMBIE_KILLER",
+        "displayName": "Exterminador de Zumbis",
+        "description": "Mate 10.000 zumbis.",
+        "icon": "https://cdn.cloudflare.steamstatic.com/steamcommunity/public/images/apps/550/zombiekiller.png",
+        "progress": {
+          "current": 6870,
+          "max": 10000
+        },
+        "time": 1712150000
+      }
+    ]
+  },
+  "620": {
+    "game": "Portal 2",
+    "icon": "https://cdn.cloudflare.steamstatic.com/steam/apps/620/library_600x900.jpg",
+    "conquistas": [
+      {
+        "achievement": "TEST_COMPLETE",
+        "displayName": "Teste Concluído",
+        "description": "Finalize todos os testes cooperativos.",
+        "icon": "https://cdn.cloudflare.steamstatic.com/steamcommunity/public/images/apps/620/testcomplete.png",
+        "time": 1712200000
+      }
+    ]
+  },
+  "400": {
+    "game": "Portal",
+    "icon": "https://cdn.cloudflare.steamstatic.com/steam/apps/400/library_600x900.jpg",
+    "conquistas": [
+      {
+        "achievement": "ESCAPE",
+        "displayName": "Fuga",
+        "description": "Escape do laboratório Aperture.",
+        "icon": "https://cdn.cloudflare.steamstatic.com/steamcommunity/public/images/apps/400/escape.png",
+        "time": 1712250000
+      }
+    ]
+  },
+  "1222670": {
+    "game": "Half-Life: Alyx",
+    "icon": "https://cdn.cloudflare.steamstatic.com/steam/apps/1222670/library_600x900.jpg",
+    "conquistas": [
+      {
+        "achievement": "VR_MASTER",
+        "displayName": "Mestre da Realidade Virtual",
+        "description": "Conclua o jogo no modo difícil.",
+        "icon": "https://cdn.cloudflare.steamstatic.com/steamcommunity/public/images/apps/1222670/vrmaster.png",
+        "time": 1712300000
+      }
+    ]
+  },
+  "105600": {
+    "game": "Terraria",
+    "icon": "https://cdn.cloudflare.steamstatic.com/steam/apps/105600/library_600x900.jpg",
+    "conquistas": [
+      {
+        "achievement": "BOSS_SLAYER",
+        "displayName": "Caçador de Chefes",
+        "description": "Derrote todos os chefes do modo clássico.",
+        "icon": "https://cdn.cloudflare.steamstatic.com/steamcommunity/public/images/apps/105600/bossslain.png",
+        "time": 1712350000
+      }
+    ]
+  },
+  "292030": {
+    "game": "The Witcher 3: Wild Hunt",
+    "icon": "https://cdn.cloudflare.steamstatic.com/steam/apps/292030/library_600x900.jpg",
+    "conquistas": [
+      {
+        "achievement": "GWENT_MASTER",
+        "displayName": "Mestre do Gwent",
+        "description": "Colete todas as cartas de Gwent.",
+        "icon": "https://cdn.cloudflare.steamstatic.com/steamcommunity/public/images/apps/292030/gwent.png",
+        "time": 1712380000
+      }
+    ]
+  },
+  "578080": {
+    "game": "PUBG: BATTLEGROUNDS",
+    "icon": "https://cdn.cloudflare.steamstatic.com/steam/apps/578080/library_600x900.jpg",
+    "conquistas": [
+      {
+        "achievement": "CHICKEN_DINNER",
+        "displayName": "Vencedor, Vencedor, Frango ao Jantar",
+        "description": "Ganhe uma partida solo.",
+        "icon": "https://cdn.cloudflare.steamstatic.com/steamcommunity/public/images/apps/578080/chickendinner.png",
+        "time": 1712395000
+      }
+    ]
+  },
+  "271590": {
+    "game": "Grand Theft Auto V",
+    "icon": "https://cdn.cloudflare.steamstatic.com/steam/apps/271590/library_600x900.jpg",
+    "conquistas": [
+      {
+        "achievement": "HEIST_MASTER",
+        "displayName": "Mente do Crime",
+        "description": "Complete todos os assaltos em equipe.",
+        "icon": "https://cdn.cloudflare.steamstatic.com/steamcommunity/public/images/apps/271590/heistmaster.png",
+        "time": 1712399000
+      }
+    ]
+  }
+}
