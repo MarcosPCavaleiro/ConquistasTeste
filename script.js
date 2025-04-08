@@ -4,7 +4,7 @@ const backButton = document.getElementById("backButton");
 
 const conquistasPorJogo = {};
 
-fetch("https://gist.githubusercontent.com/Marcos/1234567890abcdef1234567890abcdef/raw/conquistas.json?nocache=" + Date.now())
+fetch("https://gist.githubusercontent.com/Marcos/abcdef1234567890abcdef1234567890/raw/conquistas.json?nocache=" + Date.now())
   .then((res) => res.json())
   .then((data) => {
     Object.assign(conquistasPorJogo, data);
@@ -16,6 +16,7 @@ fetch("https://gist.githubusercontent.com/Marcos/1234567890abcdef1234567890abcde
     console.warn("⚠️ Não foi possível carregar conquistas.json do Gist:", err);
     carregarLocal(); // Tenta carregar do localStorage como alternativa
   });
+
 
 
 function renderGames() {
