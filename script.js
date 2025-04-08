@@ -4,17 +4,17 @@ const backButton = document.getElementById("backButton");
 
 const conquistasPorJogo = {};
 
-fetch("conquistas.json")
+fetch("conquistas.json?nocache=" + Date.now())
   .then((res) => res.json())
   .then((data) => {
     Object.assign(conquistasPorJogo, data);
-    salvarLocal(); // salva no localStorage também
+    salvarLocal();
     renderGames();
     console.log("✅ conquistas.json carregado automaticamente");
   })
   .catch((err) => {
     console.warn("⚠️ Não foi possível carregar conquistas.json:", err);
-    carregarLocal(); // tenta carregar localmente se não achar o JSON externo
+    carregarLocal(); // Tenta localStorage como fallback
   });
 
 function renderGames() {
