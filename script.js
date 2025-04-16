@@ -72,11 +72,12 @@ function renderConquistas(appID) {
     title.className = "achievement-title";
 
     let titleText = data.displayName;
-    if (data.progress) {
+    if (data.progress && !data.achieved) {
       const { current, max } = data.progress;
       const porcentagem = Math.floor((current / max) * 100);
       titleText += ` (${current}/${max} - ${porcentagem}%)`;
     }
+
 
     title.textContent = titleText;
 
@@ -87,15 +88,16 @@ function renderConquistas(appID) {
     info.appendChild(title);
     info.appendChild(desc);
 
-    if (data.progress) {
-      const bar = document.createElement("div");
-      bar.className = "progress-bar";
-      const fill = document.createElement("div");
-      fill.className = "progress-fill";
-      fill.style.width = `${(data.progress.current / data.progress.max) * 100}%`;
-      bar.appendChild(fill);
-      info.appendChild(bar);
+    if (data.progress && !data.achieved) {
+       const bar = document.createElement("div");
+       bar.className = "progress-bar";
+       const fill = document.createElement("div");
+       fill.className = "progress-fill";
+       fill.style.width = `${(data.progress.current / data.progress.max) * 100}%`;
+       bar.appendChild(fill);
+       info.appendChild(bar);
     }
+
 
     if (data.time) {
       const timestampDiv = document.createElement("div");
