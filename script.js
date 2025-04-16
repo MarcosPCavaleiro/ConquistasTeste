@@ -1,5 +1,3 @@
-localStorage.clear();
-
 const gameView = document.getElementById("gameView");
 const achievementView = document.getElementById("achievementView");
 const backButton = document.getElementById("backButton");
@@ -10,13 +8,11 @@ fetch("https://gist.githubusercontent.com/MarcosPCavaleiro/b7269a421e58380c3ce57
   .then((res) => res.json())
   .then((data) => {
     Object.assign(conquistasPorJogo, data);
-    salvarLocal();
     renderGames();
     console.log("✅ conquistas.json carregado automaticamente do Gist");
   })
   .catch((err) => {
     console.warn("⚠️ Não foi possível carregar conquistas.json do Gist:", err);
-    carregarLocal(); // Tenta carregar do localStorage como alternativa
   });
 
 
@@ -121,52 +117,3 @@ backButton.onclick = () => {
   backButton.style.display = "none";
 };
 
-function salvarLocal() {
-  localStorage.setItem("conquistas", JSON.stringify(conquistasPorJogo));
-}
-
-function carregarLocal() {
-  const salvo = localStorage.getItem("conquistas");
-  if (salvo) {
-    try {
-      const data = JSON.parse(salvo);
-      Object.assign(conquistasPorJogo, data);
-      renderGames();
-    } catch (e) {
-      console.error("Erro ao carregar dados locais:", e);
-    }
-  }
-}
-
-document.getElementById("exportBtn").onclick = () => {
-  const data = JSON.stringify(conquistasPorJogo, null, 2);
-  const blob = new Blob([data], { type: "application/json" });
-  const url = URL.createObjectURL(blob);
-  const a = document.createElement("a");
-  a.href = url;
-  a.download = "conquistas-backup.json";
-  a.click();
-  URL.revokeObjectURL(url);
-};
-
-document.getElementById("importFile").addEventListener("change", function () {
-  localStorage.removeItem("conquistas");
-  const file = this.files[0];
-  if (!file) return;
-
-  const reader = new FileReader();
-  reader.onload = function (event) {
-    try {
-      const data = JSON.parse(event.target.result);
-      Object.assign(conquistasPorJogo, data);
-      localStorage.setItem("conquistas", JSON.stringify(conquistasPorJogo));
-      renderGames();
-      alert("Conquistas importadas com sucesso!");
-    } catch (e) {
-      alert("Erro ao importar arquivo.");
-    }
-  };
-  reader.readAsText(file);
-});
-
-carregarLocal();
